@@ -27,7 +27,7 @@ services:
     restart: always
 
   wordpress:
-    image: wordpress:php7.2-fpm
+    image: wordpress:4.9.8-php7.2-fpm
     container_name: wordpress
     volumes:
       - ./wordpress:/var/www/html

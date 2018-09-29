@@ -20,8 +20,6 @@ services:
   mysql:
     image: mariadb
     container_name: mysql
-    ports:
-      - '3306:3306'
     volumes:
       - ./mysql:/var/lib/mysql
     environment:

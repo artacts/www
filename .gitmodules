@@ -1,0 +1,3 @@
+[submodule "auth-api"]
+	path = auth-api
+	url = https://gitlab.com/artacts/auth-api.git

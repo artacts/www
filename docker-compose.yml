@@ -8,7 +8,8 @@ services:
       - '443:443'
     volumes:
       - ./nginx/nginx-custom.conf:/usr/local/nginx/conf/conf.d/nginx-custom.conf
-      - ./nginx/wordpress.conf:/usr/local/nginx/conf/sites/wordpress.conf
+      # - ./nginx/wordpress.conf:/usr/local/nginx/conf/sites/wordpress.conf
+      - ./nginx/wordpress_ssl.conf:/usr/local/nginx/conf/sites/wordpress_ssl.conf
       - ./logs/nginx:/var/log/nginx
       - ./wordpress:/var/www/html
       - ./certs:/etc/letsencrypt
